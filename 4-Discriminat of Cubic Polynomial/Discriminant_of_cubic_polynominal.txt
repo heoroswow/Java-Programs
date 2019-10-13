@@ -1,0 +1,10 @@
+Discriminant of cubic polynomial
+Problem taken from "Introduction to Programming in Java" by Robert Sedgewick and Kevin Wayne.
+
+Write a java program that takes three decimal values b, c, and d from the command line. These values determine the coefficients of the cubic polynomial x^3 + bx^2 + cx + d. Your task is to write an expression to compute the discriminant b^2c^2 - 4c^3 - 4b^3d - 27d^2 + 18bcd and output the result.
+
+Here is an example how your program will be tested:
+    java Discriminant 2.5 3.0 7.0
+Output format
+The program output should be printed to two decimal places. Here is the output of the above run:
+The discriminant of the polynomial x^3 + 2.50x^2 + 3.00x + 7.00 is -867.25

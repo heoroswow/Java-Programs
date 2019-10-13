@@ -1,0 +1,17 @@
+Scanner: Print Bio
+Create a Java program named “PrintBio.java” that :
+prompts a user for first name, last name, DOB, and major using a scanner object.
+prints the input values out to look similar to the following run:
+Enter first name: Alan
+Enter last name: Turing
+Enter DOB: 06/23/1912
+Enter major: Mathematics
+------------------------------
+First name:	Alan
+Last name:	Turing
+DOB: 		06/23/1912
+Major: 		Mathematics
+------------------------------
+Hints
+You can retrieve one line and store it in a variable. e.g: String first = sc.nextLine(); (Assuming that you have created a scanner object named sc.)
+Use tabs instead of space to format the output.

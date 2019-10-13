@@ -1,0 +1,33 @@
+Java Array
+An array is a variable that reference a list of other variables. You can have a list of ints, a list of doubles, a list of Strings, even a list of lists (but we'll get to that later).
+
+This exercise will introduce you to the method by which arrays are declared and referenced. To declare an array, you use the bracket ([]) operator after the type of the variable you wish to declare. So, for example:
+
+int x; //declares a single integer
+int[] a; //declares an array of integers called a
+Now, like other variables, the array must be initialized to some value before it can be used. One such way we can do this is using the bracketed list operator:
+
+int[] a = {1,2,3,4,5};
+The above statement declares an integer array called a, whose elements are 1, 2, 3, 4, and 5.
+
+Now, how do we access the individual elements of an array? Well, much like Strings, we use the bracket operator ([]) with an index to refer to a single element of the array. Also like strings, the first element is referenced as element 0, the second is element 1, and so on. So, for example:
+
+int[] a = {1,2,3,4,5};
+System.out.print(a[0]); // outputs 1
+System.out.print(a[3]); // outputs 4
+System.out.print(a[5]); // causes a run-time error, there is no element 5.
+Now, unlike the characters in strings, the individual elements of an array can also be "l-values", or they can be assigned to. So, for example:
+
+int[] a = {1,2,3,4,5};
+a[2] = 7; // a now contains {1,2,7,4,5}
+We'll learn more about how to deal with arrays in the next problem. Your task for this problem is to write a program that declares an array of integers containing the following numbers (in this order):
+
+5,3,12,3,6,14,2,9,8,4
+Then, prompt the user for an index. The program should then tell the user what value is at that index. You may assume that the input from the checker will not contain any invalid indices. Your program should not contain an if or switch statement.
+
+The output of your program should look and function like the examples shown below.
+
+Please enter an index: 2
+The element at index 2 is 12.
+Please enter an index: 8
+The element at index 8 is 8.

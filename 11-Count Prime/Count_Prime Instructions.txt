@@ -1,0 +1,30 @@
+Prime Sieve
+A prime number is an integer greater than 1 that has no positive divisors other than 1 and itself. For example, 3 is a prime since 1 and 3 are its only positive divisors. However, 6 is not prime since it is divisible by 2 (i.e. 6 = 2x3).
+
+Here are the list of prime numbers that are less than or equal to 20.
+
+    2 3 5 7 11 13 17 19
+  
+Given a positive number n, your task is to create a program named CountPrimes.java that counts the number of prime numbers less than or equal to n (inclusive).
+
+Sieve of Eratosthenes
+A brute force technique to test if a number p is prime is to loop through all numbers less than p and test if any of them divides p. To count the number of primes less than or equal to n, we can use this naive approach to test all numbers between 2 and n inclusive. Of course, this would work, but it will take a long time to test large numbers like n >1000000.
+
+Below is a faster technique that is known as the Sieve of Eratosthenes. Given a positive number n, you can check that it will return the correct list of all prime numbers between 2 and n inclusive.
+
+Your task is to code the Sieve of Eratosthenes and use it to count the of prime numbers between 2 and n inclusive.
+
+
+  
+ Maintain a boolean array to record which integers are prime.
+  
+ Repeat for i=2 to  v N  
+   
+ if i is not still marked as prime
+      i is is not prime since we previously found a factor
+      
+ if i is marked as prime
+      i is prime since it has no smaller factors
+      mark all multiples of i to be non-prime (i.e: 2i, 3i, 4i, ... )
+    
+

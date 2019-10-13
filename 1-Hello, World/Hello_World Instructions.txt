@@ -1,0 +1,27 @@
+Hello, World!
+The goal of this exercise is to acquaint you with homework submission and automated grading.
+
+The source code (programming language syntax) is saved in a file with the extention .java. This file will be compiled into an executable file, a version that can run the algorithm represented by the source code. For this first assignment, you will create a file with a simple Java program and submit that file online. When it is submitted, it will be automatically compiled and run to check that the behavior matches what is expected. Based on the results of that check, you will immediately receive an automatic grade. If your score is less than 100, you should review the reported errors and make changes as neccessary to correct your program's behavior, then resubmit to get an updated score. You can resubmit any number of times until the homework deadline is reached.
+
+Note: although you can perform all of your testing for programs written in this course by submitting them online, it is strongly recommended that you install a compiler on your own computer and use this for testing before submitting online. Instructions for installing and using a compiler are provided elsewhere.
+
+Hello, world!
+Now you need to create a file that will contain your program. You are welcome to use any text editor that will save the program as plain text: DrJava, Notepad, Notepad++, PSPad, etc. (Word or WordPad will not work correctly.)
+
+Once you have created and opened the file in an editor, copy the following source code into it. If you select it in the browser and copy it (Ctrl-C), you can paste it (Ctrl-V) into your file.
+
+/*
+ * File: HelloWorld.java
+ * -------------
+ * This program prints the message "Hello, World!" on the screen.
+ */
+ 
+ public class HelloWorld {
+     public static void main(String[] args) { 
+         System.out.println("Hello, World!");
+     }
+}
+Save your file to disk by selecting the menu item File / Save. For a typical assignment, once you have completed writing the program, you should begin testing on your computer and then submit it online. Here, since the program is provided to you, we will go on to the submission step.
+
+Submitting your work
+Submit your program using the form below. Select the browse button and find the source file HelloWorld.java you just created. Submit it. If all goes well you should receive a success message. If not, review the error messages, then correct your program and try again.

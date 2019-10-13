@@ -1,0 +1,14 @@
+Command line: Print Bio
+Create a Java program named “PrintBioArguments.java” parses four commandline arguments in the following order: the first name, last name, DOB, and major.
+Example run is shown below.
+
+This program prints user's first name, last name, DOB, 
+and major that are parsed from the command line as arguments.
+------------------------------
+First name:	Alan
+Last name:	Turing
+DOB: 		06/23/1912
+Major: 		Mathematics
+------------------------------
+Hints
+Use tabs instead of space to format the output.

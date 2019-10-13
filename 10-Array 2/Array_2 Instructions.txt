@@ -1,0 +1,44 @@
+Java Array Part. 2
+How to use "new"?
+The bracket array declaration is fine if you know what should be in your array when you declare it. It is possible, however, to declare an array, and not initialize its values. You do this using the new operator. It allows you to create space for a given list in memory without actually assigning to it. Let's consider the following example:
+
+int[] a = new int[100]; //declare space for 100 integers;
+for(int i = 0; i < 100; i++)
+{
+	a[i] = i;
+}
+This declares an array a of 100 integers, and then assigns the numbers 0 through 99 to the values in it. This is much more efficient than trying to declare an array of 100 integers using the bracket notation.
+
+We can do one better, however. We don't even need to know how many elements there will be in the list to use an array. The spot between the brackets (where we put the 100 to declare 100 integers) can also hold a variable, like so:
+
+Scanner scanner = new Scanner(System.in);
+System.out.print("How many integers do we want? ");
+int k = sc.nextInt();
+int[] a = new int[k];
+for(int i = 0; i < a.length; i++)
+{
+	a[i] = i;
+}
+This example will, given user input k, declare an array of k integers, i then assign the values 0 through k-1 to its elements. Note that I used the .length property on the array name as a limiter for the array. This allows us to traverse an array of any length from start to finish.
+
+Your Task
+Your task for this problem is to write a program that will prompt the user for a number of integers, say k. Then read in k integers into an array. Finally, output the sum of those integers, formatted as an arithmetic problem. (Each of the original numbers will be on its own line, formatted with a field width of 5, followed by a line with 5 hyphens ----- and a line with a field width of 5 containing the sum).
+
+The output of your program should look and function like the examples shown below.
+
+How many integers are in your list? 5
+Please enter an integer: 34
+Please enter an integer: 52
+Please enter an integer: 41
+Please enter an integer: 55
+Please enter an integer: 12
+   34
+   52
+   41
+   55
+   12
+-----
+  194
+How many integers are in your list? 0
+-----
+    0

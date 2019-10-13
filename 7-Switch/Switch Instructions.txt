@@ -1,0 +1,60 @@
+Switch case
+There is one more type of major decision-making statement in Java. While it is fairly rarely used, there are still plenty of good uses for it. It is called the switch statement.
+
+The syntax for a switch statement looks like this:
+
+switch(<expression>)
+{
+	<caselist>
+		<statementlist>
+		break;
+	<caselist>
+		<statementlist>
+		break;
+	//etc.....
+}
+The case lists are lists of cases of the form:
+
+  case <value>:
+	OR
+	default:
+Where the value is a specific, constant value of the same type as the expression.
+
+When executing, a switch statement evaluates the expression given (which can be a plain variable, an arithmetic expression, a string expression, or many other things). It then checks all the "case" lines. If the value of the case is equal to the value of the expression, then the statements following that case list are run. Then, the break takes us out of the switch. If none of the case statements match, and there is a default case, it runs the statements following the default case. Let us now illustrate with an example.
+
+Suppose we're in computer security, and we want a statement that checks to see if the username that user entered is an authorized user. Consider the following example code:
+
+Scanner sc = new Scanner(System.in);
+String username = sc.nextLine();
+switch(username)
+{
+	case "Robert":
+	case "James":
+	case "Matthew":
+		System.out.println("This is a valid username.");
+		break;
+	default:
+		System.out.println("Invalid username.  The authorities have been notified.");
+		break;
+}
+This will output "This is a valid username" if and only if the username entered was Robert, James, or Matthew. Otherwise, it will say that the name is invalid. (Of course, it doesn't actually notify the authorities... we didn't write code for that.)
+
+Problem Statement
+For this problem, your task is to create a program that outputs a student's letter grade based on the grade scale below. You are only allowed to use a switch statement. You should not use if, else, else if, or any comparison operators. Here is the grade scale that we will use:
+
+90-109: A
+80-89: B
+70-79: C
+60-69: D
+0-59: F
+Anything outside those ranges: not valid
+The output of your program should look and function like the examples shown below please note that the article a/an changes appropriately with the letter grade.
+
+Please enter your grade: 34
+A grade of 34 is an F.
+Please enter your grade: 87
+A grade of 87 is a B.
+Please enter your grade: 1000
+A grade of 1000 is not valid.
+Hint
+You should be able to do this with no more than 11 cases. (Remember, you don't have to just use a variable in the switch statement... it can be an expression).

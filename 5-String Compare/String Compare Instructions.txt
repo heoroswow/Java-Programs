@@ -1,0 +1,41 @@
+String Compare
+The two string methods I'd like you to learn about for this problem are the .equals() method and the .compareTo() method. Each of these methods takes, as an argument, another string.
+
+Here's an example:
+
+String x = "book";
+String y = "movie";
+if(x.equals(y))
+{
+  //code here only executes if x and y represent the same string
+}
+else if(x.compareTo(y) < 0)
+{
+    // code here executes if x lexicographically 
+    // precedes the string argument y
+}
+else
+{
+    // code here executes if x lexicographically 
+    // follows the string argument  y 
+}
+So, x.equals(y) returns a boolean value that is true if x equals y, and false otherwise.
+
+x.compareTo(y) is a little different. The comparison is case-sensitive and based on the Unicode value of each character in the strings. It returns an integer.
+
+If the integer is less than 0, it means that x lexicographically precedes y. If x and y are equal, x.compareTo(y) returns 0, and if x comes later than y, x.compareTo(y) returns something larger than zero.
+
+So, in order to get a boolean out of it, we need to compare it to 0 (either less than, greater than, or equal).
+
+Problem Statement
+Your task for this problem is very simple: Just write a program to input two words and compare them. You should then tell if the first is "less than" (comes earlier than) the second, is equal to the second, or is "greater than" (comes after) the second. Format your output according to the examples below.
+
+Please enter the first word: Apples
+Please enter the second word: apples
+Apples is less than apples.
+Please enter the first word: tacos
+Please enter the second word: tacos
+tacos is the same as tacos.
+Please enter the first word: things
+Please enter the second word: people
+things is greater than people.

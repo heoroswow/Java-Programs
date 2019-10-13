@@ -1,0 +1,37 @@
+Do While
+There is one more type of loop available in Java. It is called the do...while loop.
+
+The syntax for a do...while loop is as follows:
+
+do
+{
+	<statement block>
+} while (<condition>);
+Note the semicolon at the end of the condition block. This is necessary.
+
+The do...while loop is different from the other loops in that the content of a do...while loop will always be run at least once, regardless of the condition. The condition cannot reference any variables declared inside the loop (thus, it is recommended that you declare your variables beforehand).
+
+Since the do...while loop guarantees its contents are run at least once, it is useful for programs that you want to run, and then ask the user if they want to go again.
+
+Your task is to create a calculator program that takes two integers and an operator. Also, it outputs the result of the corresponding operation. Then, it asks the user if it wants to do another calculation at the end. If the user does, the program should prompt the user for inputs again. You should get yes/no input from the user as a string. Treat any string that begins with a capital Y or a lowercase y as a yes. Treat any other string as a no. If the user responds with no, the program should then exit. You must use a do...while loop for this exercise.
+
+The output of your program should look and function like the examples shown below.
+
+Basic Calculator Program
+Enter the first integer: 12
+Enter the second integer: 19
+Enter the operator: +
+The result is: 31
+Another operation (y/n)? y
+Basic Calculator Program
+Enter the first integer: 12
+Enter the second integer: 19
+Enter the operator: y
+Invalid operation.
+Another operation (y/n)? n
+Basic Calculator Program
+Enter the first integer: 12
+Enter the second integer: 0
+Enter the operator: /
+Error: cannot divide by zero.
+Another operation (y/n)? something
